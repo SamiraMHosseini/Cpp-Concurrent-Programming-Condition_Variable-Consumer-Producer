@@ -84,7 +84,6 @@ public:
 	void operator() (SharedResource& sharedResource) // Function object
 	{
 		START_BANNER;
-		//std::this_thread::sleep_for(1600ms);
 		Debug::SetCurrentName(name);
 		Initiate(sharedResource);
 		while (true)

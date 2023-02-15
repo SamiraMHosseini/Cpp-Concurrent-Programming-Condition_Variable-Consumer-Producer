@@ -4,7 +4,7 @@ The producer initially sends a value to the consumer and then waits for the modi
 Meanwhile, the consumer receives the value, modifies it, and sends it back to the producer, thus establishing an infinite loop. 
 The aim is to produce sequential consistency.
 # What is sequential consistency? 
-sequential consistency is a property of concurrent programs that guarantees that the program's execution appears to be sequentially consistent from the perspective of an external observer, despite being executed concurrently. This means that the execution of a program should be equivalent to some sequential execution of the program in which the operations of all threads are interleaved in a consistent and coherent manner.
+Sequential consistency is a property of concurrent programs that guarantees that the program's execution appears to be sequentially consistent from the perspective of an external observer, despite being executed concurrently. This means that the execution of a program should be equivalent to some sequential execution of the program in which the operations of all threads are interleaved in a consistent and coherent manner.
 
 C++ supports concurrent programming with features like threads, mutexes, condition variables, and atomic variables. These features allow developers to write programs that can execute multiple tasks concurrently. However, when multiple threads access shared data, it is essential to ensure that the accesses are synchronized in a way that ensures sequential consistency.
 

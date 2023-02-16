@@ -1,6 +1,5 @@
-class SharedResource
+struct SharedResource
 {
-public:
 	SharedResource() :
 		mtx(), condVar(), flag(false), counter(0xA)
 	{

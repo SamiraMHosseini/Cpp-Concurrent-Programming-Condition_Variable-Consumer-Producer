@@ -12,3 +12,23 @@ In C++, sequential consistency can be achieved through the use of atomic variabl
 
 In summary, C++ concurrent programming refers to the ability to execute multiple tasks concurrently, while sequential consistency is a property that guarantees that the program's execution appears to be sequentially consistent from the perspective of an external observer, despite being executed concurrently.
 
+# Sample Output
+thread( 7588) main: begin()
+	thread(33744) Consumer: begin()
+	thread(29028) Producer: begin()
+		(Producer): I am sending 0xA to the Consumer
+		(Consumer): I have received 0xA from the Producer 
+		(Consumer): I am  sending 0x15 to the Producer 
+		(Producer): I have received 0x15 from the Consumer
+		(Producer): I am sending 0xB to the Consumer
+		(Consumer): I have received 0xB from the Producer 
+		(Consumer): I am  sending 0x17 to the Producer 
+		(Producer): I have received 0x17 from the Consumer
+		(Producer): I am sending 0xC to the Consumer
+		(Producer): I am waiting for the Consumer...
+		(Consumer): I have received 0xC from the Producer 
+		(Consumer): I am  sending 0x19 to the Producer 
+		(Producer): I have received 0x19 from the Consumer
+		(Producer): I am sending 0xD to the Consumer
+		(Consumer): I have received 0xD from the Producer 
+		(Consumer): I am  sending 0x1B to the Producer 

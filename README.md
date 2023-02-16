@@ -11,7 +11,7 @@ C++ supports concurrent programming with features like threads, mutexes, conditi
 In C++, sequential consistency can be achieved through the use of atomic variables and memory barriers. Atomic variables provide a way to ensure that a variable is modified atomically, and memory barriers provide a way to enforce an order of operations between threads.
 
 In summary, C++ concurrent programming refers to the ability to execute multiple tasks concurrently, while sequential consistency is a property that guarantees that the program's execution appears to be sequentially consistent from the perspective of an external observer, despite being executed concurrently.
-
+ 
 # Sample Output
 thread( 7588) main: begin()
 	thread(33744) Consumer: begin()
